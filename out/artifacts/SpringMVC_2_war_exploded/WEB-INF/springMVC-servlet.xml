@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 开启扫描 加上@Controller 的注解的类作为springMVC的控制层  -->
+    <context:component-scan base-package="com.DanceBytes.controller"></context:component-scan>
+
+    <!--配置视图解释器，进行页面的跳转-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--跳转的页面的路径-->
+        <property name="prefix" value="/WEB-INF/view/" />
+        <!--跳转的页面的后缀名称-->
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+</beans>
