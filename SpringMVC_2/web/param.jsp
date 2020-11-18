@@ -12,7 +12,7 @@
 </head>
 <body>
 <form action="param" method="post">
-    username: <input type="text" name="username" value="hao"><br/>
+    username: <input type="text" name="username" value="好"><br/>
     password: <input type="text" name="password" value="hao123"><br/>
     age: <input type="text" name="age" value="12"><br/>
     province: <input type="text" name="address.province" value="河南省"><br/>
