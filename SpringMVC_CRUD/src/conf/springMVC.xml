@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- 开启扫描 加上@Controller 的注解的类作为springMVC的控制层  -->
+    <!-- 配置注解扫描 开启扫描 加上@Controller 的注解的类作为springMVC的控制层  -->
     <context:component-scan base-package="com.DanceBytes.controller"></context:component-scan>
 
     <!--配置视图解释器，进行页面的跳转-->

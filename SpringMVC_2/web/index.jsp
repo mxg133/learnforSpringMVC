@@ -20,10 +20,16 @@
     <a href="mvc/testREST/12/hao">test testREST</a>
 
     <br/>
+    <form action="mvc/test" method="post">
+      <input type="text" name="username">
+      <input type="submit" value="test乱码">
+    </form>
+
+    <br/>
 
   </h4>
 
-    <form action="test?username=admin" method="post">
+    <form action="mvc/test1?username=admin" method="post"><br/>
       <input type="submit" value="sub!post">
     </form>
 

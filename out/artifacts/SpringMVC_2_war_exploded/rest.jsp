@@ -54,9 +54,5 @@
 <%-- 通过ajax请求 --%>
 <input onclick="test()" type="button" value="测试ajax">
 
-
-
-
-
 </body>
 </html>

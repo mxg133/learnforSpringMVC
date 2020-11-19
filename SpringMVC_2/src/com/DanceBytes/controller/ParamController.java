@@ -74,21 +74,11 @@ public class ParamController {
     }
 
 //    把 对象 放在 域 中的 第 3 种方式
-    @RequestMapping(value = "/param7", method = RequestMethod.POST)
+    @RequestMapping(value = "/param", method = RequestMethod.POST)
     public String param7(Model model, @RequestParam(value = "username", required = false, defaultValue = "admin")String username1) {
         //装在数据 放在request域
         model.addAttribute("username", username1);
         //设置视图名称，实页面跳转
         return "success";
     }
-
-    //解决乱码问题
-//    @RequestMapping(value = "/param", method = RequestMethod.POST)
-//    public String param8(Model model, @RequestParam(value = "username", required = false, defaultValue = "admin")String username1) {
-//        //装在数据 放在request域
-//        model.addAttribute("username", username1);
-//        //设置视图名称，实页面跳转
-//        return "success";
-//    }
-
 }

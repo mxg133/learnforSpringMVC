@@ -17,7 +17,7 @@
     <h1>success 了</h1>
     <br/>
 <div>
-    ${username}<br/>
+    username: ${username}<br/>
 </div>
 
 
