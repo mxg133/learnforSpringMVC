@@ -54,9 +54,9 @@ public class EmpController {
         map.put("genders", genders);
         //form标签有自动回显示的功能，会在页面能够默认获取request作用域 中command属性的值
 //        map.put("command", new Employee());
-        //在<form:formm>标签设置的自定义名
+        //在<form:form>标签设置的自定义名
         map.put("emp", new Employee());
-        return "add";
+        return "edit";
     }
 
     /**
@@ -68,7 +68,7 @@ public class EmpController {
     @RequestMapping(value = "/emp", method = RequestMethod.POST)
     public String addEmp(Employee employee) {
         employeeDao.save(employee);
-        return "redrect:/emps";
+        return "redirect:/emps";
     }
 
     /**
@@ -77,10 +77,15 @@ public class EmpController {
     @RequestMapping(value = "/emp/{id}", method = RequestMethod.GET)
     public String toUpdate(@PathVariable("id")Integer id, Map<String, Object> map) {
         Employee employee = employeeDao.get(id);
+        //设置存储性别的回显
+        Map<String, Object> genders = new HashMap<>();
         map.put("emp", employee);
-        Collection<Department> depts = departmentDao.getDepartments();
-        map.put("depts", depts);
-        return "update";
+        genders.put("0", "女");
+        genders.put("1", "男");
+        map.put("genders", genders);
+//        Collection<Department> depts = departmentDao.getDepartments();
+//        map.put("depts", depts);
+        return "edit";
     }
 
     /**
