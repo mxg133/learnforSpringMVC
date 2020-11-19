@@ -18,6 +18,7 @@
     </filter-mapping>
 
 
+    <!-- HiddenHttpMethodFilter 用于处理 put 和 delete 请求 -->
     <filter>
         <filter-name>HiddenHttpMethodFilter</filter-name>
         <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
@@ -27,6 +28,7 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <!-- 配置 SpringMVC 核心文件 -->
     <servlet>
         <servlet-name>springMVC</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
