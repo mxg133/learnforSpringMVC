@@ -14,8 +14,8 @@
 <a href="down">下载</a><br/>
 <form action="up" method="post" enctype="multipart/form-data">
     请上传：<input type="file" name="uploadFile"/><br/>
-    请上传：<input type="file" name="uploadFile"/><br/>
-    请上传：<input type="file" name="uploadFile"/><br/>
+<%--    请上传：<input type="file" name="uploadFile"/><br/>--%>
+<%--    请上传：<input type="file" name="uploadFile"/><br/>--%>
     请描述：<input type="text" name="desc"/><br/>
     <input type="submit" value="确认"/>
 </form>
