@@ -25,4 +25,13 @@
     <mvc:default-servlet-handler/>
     <!-- mvc驱动 -->
     <mvc:annotation-driven/>
+
+    <!-- 文件上传 将File文件 处理为 MultipartFile文件 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 下面两行一般都不写 -->
+        <!-- 设置文件解析的编码 要跟页面的编码一致 -->
+        <!-- <property name="defaultEncoding" value="UTF-8"/>-->
+        <!-- 设置最大文件上传大小 -->
+        <!-- <property name="maxUploadSize" value="88888888"/>-->
+    </bean>
 </beans>

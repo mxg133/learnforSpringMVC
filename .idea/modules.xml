@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringMVC_1/SpringMVC_1.iml" filepath="$PROJECT_DIR$/SpringMVC_1/SpringMVC_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMVC_2/SpringMVC_2.iml" filepath="$PROJECT_DIR$/SpringMVC_2/SpringMVC_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMVC_CRUD/SpringMVC_CRUD.iml" filepath="$PROJECT_DIR$/SpringMVC_CRUD/SpringMVC_CRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC_JSON/SpringMVC_JSON.iml" filepath="$PROJECT_DIR$/SpringMVC_JSON/SpringMVC_JSON.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnforSpringMVC.iml" filepath="$PROJECT_DIR$/learnforSpringMVC.iml" />
     </modules>
   </component>

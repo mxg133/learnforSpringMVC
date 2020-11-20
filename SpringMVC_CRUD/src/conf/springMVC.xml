@@ -16,7 +16,13 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <!-- Tomcat 处理静态资源 -->
+    <!-- Tomcat 处理静态资源
+        配置Tomcat的servlet，DefaultServlet
+        注意 当DefaultServlet所设置的<url-pattern>的值 与 开发人员的配置的servlet的<url-pattern>相同 以开发人员配置的servlet优先
+        当客户端发送请求，由于DefaultServlet所设置的<url-pattern>的值 与 开发人员的配置DispatcherServlet的servlet的<url-pattern>都是/
+        因此会先通过DispatcherServlet处理请求，找该请求是否有相对应的处理器，有责处理，无则交给DispatcherServlet处理
+     -->
     <mvc:default-servlet-handler/>
+    <!-- mvc驱动 -->
     <mvc:annotation-driven/>
 </beans>

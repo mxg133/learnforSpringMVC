@@ -18,6 +18,7 @@
     </filter-mapping>
 
 
+
     <!-- HiddenHttpMethodFilter 用于处理 put 和 delete 请求 -->
     <filter>
         <filter-name>HiddenHttpMethodFilter</filter-name>
@@ -28,6 +29,8 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+
+
     <!-- 配置 SpringMVC 核心文件 -->
     <servlet>
         <servlet-name>springMVC</servlet-name>
@@ -36,6 +39,7 @@
         <init-param>
             <!-- 上下文配置路径 就是个参数名 用于设置springMVC配置文件的路径以及名称 -->
             <param-name>contextConfigLocation</param-name>
+            <!-- 默认在WEB-INF下 -->
             <param-value>classpath:conf/springMVC.xml</param-value>
         </init-param>
 
@@ -44,7 +48,6 @@
             可以写整数 只有>0的数才有效果
              数越小优先级越大-->
         <load-on-startup>1</load-on-startup>
-
     </servlet>
     <servlet-mapping>
         <servlet-name>springMVC</servlet-name>

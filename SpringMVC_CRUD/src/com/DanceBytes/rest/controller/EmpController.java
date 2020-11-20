@@ -91,9 +91,18 @@ public class EmpController {
     /**
      * 修改
      */
-    @RequestMapping(value = "emp", method = RequestMethod.PUT)
+    @RequestMapping(value = "/emp", method = RequestMethod.PUT)
     public String updateEmp(Employee employee) {
         employeeDao.save(employee);
-        return "redrect:/emps";
+        return "redirect:/emps";
+    }
+
+    /**
+     * 删除
+     */
+    @RequestMapping(value = "/emp/{id}", method = RequestMethod.DELETE)
+    public String deleteEmp(@PathVariable("id")Integer id) {
+        employeeDao.delete(id);
+        return "redirect:/emps";
     }
 }
