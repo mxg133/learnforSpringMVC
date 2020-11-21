@@ -41,20 +41,20 @@
 
 
     <!-- 设置拦截器 -->
-    <mvc:interceptors>
-        <!-- 下面2个 全都是默认拦截所有请求 -->
-        <bean class="com.DanceBytes.interceptor.FirstInterceptor"/>
-        <bean class="com.DanceBytes.interceptor.SecondInterceptor"/>
-        <!-- 此方式要求拦截器必须加注解 @Component -->
-        <!-- <ref bean="firstInterceptor"/>-->
+<!--    <mvc:interceptors>-->
+<!--        &lt;!&ndash; 下面2个 全都是默认拦截所有请求 &ndash;&gt;-->
+<!--        <bean class="com.DanceBytes.interceptor.FirstInterceptor"/>-->
+<!--        <bean class="com.DanceBytes.interceptor.SecondInterceptor"/>-->
+<!--        &lt;!&ndash; 此方式要求拦截器必须加注解 @Component &ndash;&gt;-->
+<!--        &lt;!&ndash; <ref bean="firstInterceptor"/>&ndash;&gt;-->
 
-        <!-- 设置 自定义拦截方式 -->
-<!--        <mvc:interceptor>-->
-<!--            <bean/>-->
-<!--            <mvc:mapping path=""/>-->
-<!--            <mvc:exclude-mapping path=""/>-->
-<!--        </mvc:interceptor>-->
-    </mvc:interceptors>
+<!--        &lt;!&ndash; 设置 自定义拦截方式 &ndash;&gt;-->
+<!--&lt;!&ndash;        <mvc:interceptor>&ndash;&gt;-->
+<!--&lt;!&ndash;            <bean/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <mvc:mapping path=""/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <mvc:exclude-mapping path=""/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </mvc:interceptor>&ndash;&gt;-->
+<!--    </mvc:interceptors>-->
 
     <!-- 配置异常处理 -->
     <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
